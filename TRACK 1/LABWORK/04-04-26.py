@@ -59,4 +59,4 @@ print("Valid Voter") if age>18 else print("Invalid Voter")
 """
 
 year=int(input("Enter The year to check leap year or not: "))
-print("Leap yea675r") if(year%400==0 or (year%100 !=0 and year %4==0)) else print("Not a Leap Year")
+print("Leap year") if(year%400==0 or (year%100 !=0 and year %4==0)) else print("Not a Leap Year")
