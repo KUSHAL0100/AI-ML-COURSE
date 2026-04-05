@@ -56,7 +56,101 @@ name=input("What is your name: ")
 age=int(input("Enter Your Age: "))
 print("Valid Voter") if age>18 else print("Invalid Voter")
 
-"""
 
 year=int(input("Enter The year to check leap year or not: "))
 print("Leap year") if(year%400==0 or (year%100 !=0 and year %4==0)) else print("Not a Leap Year")
+
+#TEMPRATUREEEEEEE
+temp=int(input("Enter the Tempreture of your area: "))
+if temp<=0:
+    print("It is Very Freezing")
+elif 0<temp<=10:
+    print("It is very cold")
+elif 10<temp<=20:
+    print("It is cold")
+elif 20<temp<=30:
+    print("It is Pleasent")
+elif 30<temp<=40:
+    print("It is Hot")
+elif temp>40:
+    print("It is Very Hot")
+
+#LOOPS
+for i in range(1,6):
+    print(i)
+print("\n\n")
+#  range(start,stop,steps), start and step is optional,bydefault start will be 0 and step will be 1
+for i in range(6):
+    print(i)
+
+print("\n\n")
+name="kushal"
+for i in range(len(name)):
+    print(name[i])
+
+print("\n\n")
+for char in name: #this method is simpler,but you don't have control on indexing anymore,works good for direct printing or iteration without operation
+    print(char)
+
+#Reverse for loop
+n=int(input("Enter the Number: "))
+for i in range(n,0,-1): print(i)
+#table
+n=int(input("Enter the Number: "))
+for i in range(1,11):print(f"{n} * {i} = {n*i}")
+
+#Sum upto N terms
+n=int(input("Enter the Terms: "))
+#sum=0
+f#or i in range(n): sum+=(i+1)
+#print(f"Sum is: {sum}")
+
+sum=0
+#OPTIONAL WAY FOR SUM
+for i in range(1,n+1): sum+=(i)
+print(f"Sum is: {sum}")
+
+
+n=int(input("Enter the Fectorial: "))
+factor=1
+for i in range(n,0,-1): factor*=i
+print(factor)
+#SUM OF EVEN AND ODD NUMBERS SEPERETLY
+n=int(input("Enter the Terms: "))
+even=0
+odd=0
+for i in range(n+1):
+    print(i)
+    if i%2==0: even+=i
+    else: odd+=i
+print(f"Even Sum is: {even}, odd Sum is: {odd}")
+
+
+#ALL FACTORS OF A NUMBER
+
+n=int(input("Enter the Number to find out Factors: "))
+for i in range(1,n):
+    if(n%i==0):print(f"{i} is the factor of {n}")
+
+#PERFECT NUMBER OR NOT(6=1,2,3),496,8128
+
+n=int(input("Enter the Number to find out it is perfect number or not: "))
+sum=0
+for i in range(1,n):
+    if(n%i==0):sum+=i
+
+if(sum==n): print(f"Number {n} is a perfect Number")
+else: print(f"Number {n} is not a perfect Number ")
+
+n=int(input("Enter the Number to find out it is prime or not: "))
+flag=0
+for i in range(1,n+1):
+    if(n%i==0):flag+=1
+
+print("Number is prime") if(flag==2) else print("Number is not Prime")
+
+
+n=int(input("Enter the Number "))
+for i in range(n+1): print(i)
+
+"""
