@@ -1,0 +1,6 @@
+file=open("task2.txt","w+")
+file.write("w+ method")
+print(file.tell())
+file.seek(0)
+print(file.read())
+file.close()
