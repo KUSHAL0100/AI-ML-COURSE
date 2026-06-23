@@ -89,3 +89,17 @@ print(part1,part2)
 #Vertical Stack
 stacked=np.vstack((part1,part2))
 print(stacked)
+
+
+# import pandas as pd
+# from scipy.stats import zscore
+# df = pd.DataFrame({
+#     'days' :[1,2,3,4,5,6,7,8,9,10,11], 
+#     "sales" :[100,200,250,350,170,300,400,500,600,-10000,20000]
+# })
+
+# # print(df)
+# df['z_score'] = zscore(df['sales'])
+# print(df)
+# outlier = df[df['z_score'].abs() > 1]
+# print(outlier)

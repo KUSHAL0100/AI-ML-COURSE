@@ -1,0 +1,11 @@
+restaurant,user_rating,order_amount,delivery_time,city
+Spice Villa,4.1,350,30,Ahmedabad
+Food Hub,4.3,420,25,Surat
+Pizza Point,4.0,550,35,Rajkot
+Royal Dine,4.2,700,40,Vadodara
+Burger Town,4.1,280,20,Ahmedabad
+Cafe Delight,4.4,620,45,Surat
+Tandoori House,4.2,480,30,Rajkot
+Quick Bites,1.0,150,15,Ahmedabad
+Urban Kitchen,4.3,800,50,Vadodara
+Food Factory,5.0,900,55,Surat

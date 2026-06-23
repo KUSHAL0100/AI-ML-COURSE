@@ -1,0 +1,6 @@
+Transaction_ID;Customer;Amount;Status
+P101;Kushal;500;Success
+P102;Rahul;;Failed
+P103;Neha;1200;Success
+P104;;800;Pending
+P105;Amit;650;
