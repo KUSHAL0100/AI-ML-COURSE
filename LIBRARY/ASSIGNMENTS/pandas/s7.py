@@ -14,7 +14,7 @@ Fix the following code snippet where the 'is_premium' column in a Spotify user D
 
 import pandas as pd
 import matplotlib.pyplot as plt
-df=pd.read_csv("LIBRARY\\ASSIGNMENTS\\pandas\\zomato.csv")
+"""df=pd.read_csv("LIBRARY\\ASSIGNMENTS\\pandas\\zomato.csv")
 Q1=df['user_rating'].quantile(0.25)
 Q3=df['user_rating'].quantile(0.75)
 
@@ -32,4 +32,15 @@ print(outliers.index+1)
 plt.boxplot(df['user_rating'])
 plt.ylabel("Ratings")
 plt.title("Ratings")
-plt.show()
+plt.show()"""
+
+df =pd.DataFrame({
+    "id" :[1,2,3,4,5,6,7],
+    "name" :["ram","sita","ravan","laxman","surekha","ravi","ramesh"],
+    "status" :["True","False","True","False","True","False","True"],
+    "experience":["2","4","1","5","7","9","3"],
+    "city" :["ahm","ahmedabad","bombay","mumbai","delhi","pune","rajstan"]
+})
+
+df["city"]=df["city"].replace(["ahm","bombay"],["ahmedabad","mumbai"])
+print(df)
