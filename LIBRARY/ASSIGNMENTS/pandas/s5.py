@@ -12,5 +12,28 @@ Concatenate two DataFrames representing 'today_orders' and 'yesterday_orders' (e
 """
 import pandas as pd
 
-df=pd.read_json("https://jsonplaceholder.typicode.com/users")
-print(df['username'])
+# df=pd.read_json("https://jsonplaceholder.typicode.com/users")
+# print(df['username'])
+
+# df1=pd.read_csv("LIBRARY/ASSIGNMENTS/pandas/orders.csv")
+# df2=pd.read_csv("LIBRARY/ASSIGNMENTS/pandas/users.csv")
+
+# merge_df=pd.merge(df1,df2)
+# print(merge_df)
+
+# DataFrame for today's orders
+# today_orders = pd.DataFrame({
+#     "order_id": [101, 102],
+#     "item": ["Laptop", "Mouse"],
+#     "price": [55000, 800]
+# })
+
+# # DataFrame for yesterday's orders
+# yesterday_orders = pd.DataFrame({
+#     "order_id": [99, 100],
+#     "item": ["Keyboard", "Monitor"],
+#     "price": [1500, 12000]
+# })
+
+# combined_orders=pd.concat((today_orders,yesterday_orders)).reset_index(drop=True)
+# print(combined_orders)
