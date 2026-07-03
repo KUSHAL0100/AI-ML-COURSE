@@ -1,6 +1,6 @@
+
 import pandas as pd
 import numpy as np
-from sympy import false
 
 df=pd.read_csv("LIBRARY/ASSIGNMENTS/pandas/flipkart_orders.csv")
 # revenue=pd.Series(df['revenue'])
@@ -29,7 +29,7 @@ df=pd.read_csv("LIBRARY/ASSIGNMENTS/pandas/flipkart_orders.csv")
 # delivered_orders = df.loc[df["order_status"] == "Delivered"]
 
 # print(delivered_orders)
-# high_revenue = df[df["revenue"] > 10000]
+# high_revenue = df[df["revenue"] > 10000] 
 
 # print(high_revenue)
 
@@ -81,4 +81,29 @@ df=pd.read_csv("LIBRARY/ASSIGNMENTS/pandas/flipkart_orders.csv")
 # print(df.head())
 
 print(df.isna().sum())
-print(df.isna().mean()*100)
+# print(df.isna().mean()*100)
+
+print("Before removing null customer name: ",df.shape[0])
+# df['customer_name'].dropna(inplace=True) WON'T WORK
+df.dropna(subset=['customer_name'],inplace=True)
+print("After removing null customer name: ",df.shape[0])
+
+#GREAT ALTERNATIVES
+#df = df[df["customer_name"].notna()]  BOOLEAN INDEXING
+#df = df.loc[df["customer_name"].notna()] SAME
+
+
+
+# df=df.dropna(thresh=(df.isna().sum().mean()<0.4)) won't work
+
+# print(df[(df.isna().sum(axis=0)) > (df.shape[0]/100*40)]) won't work
+
+print(df.shape[1])
+df = df.drop(columns=df.columns[df.isna().mean() > 0.40])
+print(df.shape[1])
+
+df['age']=df['age'].fillna(df['age'].median())
+df['city']=df['city'].fillna('unknown')
+# df['rating']=df['rating'].fillna(df.groupby('category')['rating'].mean()) WON'T WORKKK
+df['rating']=df['rating'].fillna(df.groupby('category')['rating'].transform('mean')) 
+
