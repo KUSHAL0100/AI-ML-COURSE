@@ -1,0 +1,11 @@
+restaurant_name,cuisine,average_cost_for_two,user_rating,votes,online_order
+The Bombay Grill,North Indian,1200,4.5,2500,Yes
+Sea Breeze,Seafood,1800,4.7,3200,No
+Cafe Marine,Cafe,800,4.2,1400,Yes
+Pizza Hub,Italian,1000,4.3,1800,Yes
+Spice Kitchen,Chinese,900,4.1,1500,Yes
+Royal Biryani,Biryani,1100,4.4,2100,No
+Urban Tandoor,North Indian,1300,4.6,2800,Yes
+Burger Town,Fast Food,700,4.0,1200,Yes
+Sushi House,Japanese,2200,4.8,3500,No
+Veg Delight,Vegetarian,850,4.2,1600,Yes

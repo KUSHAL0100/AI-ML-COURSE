@@ -1,0 +1,16 @@
+product_id,product_name,category,price,rating,review
+P101,Wireless Mouse,Electronics,799,4.5,Excellent product
+P102,Bluetooth Speaker,Electronics,1499,4.3,Good sound quality
+P103,Cotton T-Shirt,Fashion,599,4.1,Very comfortable
+P104,Running Shoes,Fashion,2499,,Worth the money
+P105,Mixer Grinder,Home Appliances,3299,4.4,
+P106,Laptop Bag,Accessories,899,4.0,Good quality
+P107,Smart Watch,Electronics,4999,4.6,Amazing features
+P108,Coffee Maker,Home Appliances,2799,3.9,Works well
+P109,Mobile Cover,Accessories,399,4.2,Perfect fit
+P110,LED TV,Electronics,35999,4.8,Excellent picture quality
+P111,Wireless Earbuds,Electronics,2999,4.4,Great battery backup
+P112,Backpack,Accessories,1599,,Nice design
+P113,Casual Shirt,Fashion,1199,4.1,Comfortable fabric
+P114,Gaming Keyboard,Electronics,2599,4.5,RGB lights are awesome
+P115,Vacuum Cleaner,Home Appliances,6499,4.3,

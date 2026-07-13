@@ -1,0 +1,11 @@
+restaurant_name,cuisine,average_cost_for_two,user_rating,votes,online_order
+Delhi Darbar,North Indian,900,4.3,2100,Yes
+Street Spice,Fast Food,500,4.0,900,Yes
+Punjabi Zaika,Punjabi,800,4.4,1700,Yes
+China Bowl,Chinese,700,4.1,1100,Yes
+Cafe Delhi,Cafe,650,4.2,1300,Yes
+Tandoori Nights,North Indian,1000,4.5,2400,No
+Biryani Junction,Biryani,850,4.3,1800,Yes
+Pasta Point,Italian,900,4.2,1400,Yes
+Veg Corner,Vegetarian,600,4.0,1000,Yes
+Mughlai House,Mughlai,1200,4.6,2600,No
