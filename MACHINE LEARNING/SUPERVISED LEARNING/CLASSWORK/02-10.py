@@ -49,9 +49,10 @@ y_predict=model.predict(x_test_scaled)
 
 # r2 score : 
 R2_score = r2_score(y_test,y_predict)
-print("R2 score :",R2_score)
 print("mSE: ",mean_squared_error(y_test,y_predict))
 print("mAE: ",mean_absolute_error(y_test,y_predict))
+print('R2: ',R2_score)
+print('')
 
 #ridge
 ridge=Ridge(alpha=1)
@@ -63,6 +64,7 @@ print("MSE:", mean_squared_error(y_test, y_pred_ridge))
 print("MAE:", mean_absolute_error(y_test, y_pred_ridge))
 print("R2:", r2_ridge)
 
+print('')
 
 #Lasso
 lasso=Lasso(alpha=1.0)
@@ -73,6 +75,7 @@ print("Ridge")
 print("MSE:", mean_squared_error(y_test, y_pred_lasso))
 print("MAE:", mean_absolute_error(y_test, y_pred_lasso))
 print("R2:", r2_lasso)
+print('')
 
 #elasticnet
 elastic = ElasticNet(alpha=1.0, l1_ratio=0.5)
@@ -85,7 +88,7 @@ print("MAE:", mean_absolute_error(y_test, y_pred_elastic))
 print("R2:", r2_elasitc)
 
 
-
+print('')
 if r2_ridge <r2_lasso:
     if r2_ridge<r2_elasitc:
         print("Ridge is better model to use")
